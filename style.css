@@ -1,0 +1,145 @@
+html{
+	background-color: #333;
+}
+
+div.main{
+	display: grid;
+  grid-template-columns: 10% auto 10%;
+}
+
+h1{
+	float: left;
+	color: #fff;
+}
+
+li.top-right{
+	float: right;
+	list-style: none;
+}
+
+li.top-right a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	display: block;
+	min-height: 16px;
+	text-align: center;
+	padding: 14px;
+}
+
+nav{
+	width: 100%;
+	margin: 0;
+	grid-column: span 8;
+}	
+
+nav ul{
+	background-color: #000;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border-radius: 10px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+ul.nav-left li{
+	list-style: none;
+	float: left;
+}
+
+ul.nav-left li.nav-right{
+	float: right;
+}
+
+ul.nav-left li a{
+	text-decoration: none;
+	display: block;
+	min-height: 16px;
+	text-align: center;
+	padding: 14px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+ul.nav-left li:not(:first-child) a:hover, .dropdown:hover .dropbtn{
+	color : #fff;
+	background-color: #555;
+  border-radius: 25%;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	text-transform: uppercase;
+	font-size: inherit;
+	font-family: inherit;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 14px;
+	background-color: inherit;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	text-align: left;
+	text-transform: initial;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.search-container {
+  min-height: 16px;
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;	
+}
+
+.search-container button {
+	min-height: 16px;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #fff;
+  font-size: 17px;
+  border: none;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.search-container button:hover {
+  background: #04AA6D;
+}
+
+.mySlides{
+	display: none;
+	grid-column-start: 1;
+  grid-column-end: 8;
+  padding: 10px;
+}
